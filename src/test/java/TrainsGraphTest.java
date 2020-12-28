@@ -26,6 +26,13 @@ public class TrainsGraphTest {
         Assert.assertEquals(5,result);
     }
 
-    
+    @Test
+    public void return_5_when_given_the_route_A_D_C(){
+        String path = "A-D-C";
+        int result = graph.findDistOfPath(path.split("-"));
+        Assert.assertEquals(13,result);
+    }
+
+
 
 }
